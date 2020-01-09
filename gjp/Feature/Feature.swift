@@ -2,7 +2,7 @@
 //  Home.swift
 //  gjp
 //
-//  Created by Gi Joe on 7/1/20.
+//  Created by Jianping on 7/1/20.
 //  Copyright © 2020 ganjianping. All rights reserved.
 //
 

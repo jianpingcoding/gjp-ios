@@ -1,22 +1,21 @@
 //
-//  StoryboardUIViewController.swift
+//  SwiftViewController.swift
 //  gjp
 //
-//  Created by Jianping on 7/1/20.
+//  Created by Gi Joe on 9/1/20.
 //  Copyright © 2020 ganjianping. All rights reserved.
 //
 
 import UIKit
 
-class StoryboardUIViewController: UIViewController {
+class SwiftViewController: UIViewController {
 
-    @IBOutlet weak var nameLabel: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        nameLabel.text = "Name"
         // Do any additional setup after loading the view.
+        self.view.backgroundColor = UIColor.red
+        
     }
     
 
