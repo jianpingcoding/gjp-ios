@@ -20,7 +20,7 @@
 		64F4712A23C465EB0048F322 /* FeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F4712923C465EB0048F322 /* FeatureViewController.swift */; };
 		64F4712C23C4673C0048F322 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F4712B23C4673C0048F322 /* Feature.swift */; };
 		64F4712F23C48AA70048F322 /* StoryboardUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F4712E23C48AA70048F322 /* StoryboardUIViewController.swift */; };
-		64FE17E123C727A800BE9E0B /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FE17E023C727A800BE9E0B /* SwiftViewController.swift */; };
+		64FE17E123C727A800BE9E0B /* UIKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FE17E023C727A800BE9E0B /* UIKitViewController.swift */; };
 		83274510B21B82FB7C0DF515 /* Pods_gjpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C2BBA068ABBF5155FFF1557 /* Pods_gjpTests.framework */; };
 		EA30B6328C04EBE960656CC3 /* Pods_gjpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E0A934263425B3C43D6923 /* Pods_gjpUITests.framework */; };
 /* End PBXBuildFile section */
@@ -65,7 +65,7 @@
 		64F4712923C465EB0048F322 /* FeatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureViewController.swift; sourceTree = "<group>"; };
 		64F4712B23C4673C0048F322 /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
 		64F4712E23C48AA70048F322 /* StoryboardUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardUIViewController.swift; sourceTree = "<group>"; };
-		64FE17E023C727A800BE9E0B /* SwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
+		64FE17E023C727A800BE9E0B /* UIKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitViewController.swift; sourceTree = "<group>"; };
 		72E0A934263425B3C43D6923 /* Pods_gjpUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gjpUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BE526A4E31A726938F8B2F8 /* Pods_gjp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gjp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C2BBA068ABBF5155FFF1557 /* Pods_gjpTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gjpTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,7 +136,7 @@
 		64F470F523C41CDE0048F322 /* gjp */ = {
 			isa = PBXGroup;
 			children = (
-				64F84F3123C6D83F0036800F /* Swift */,
+				64F84F3123C6D83F0036800F /* UIKit */,
 				64F4712D23C48A0E0048F322 /* Storyboard */,
 				64F4712623C43FB50048F322 /* Feature */,
 				64F470F623C41CDE0048F322 /* AppDelegate.swift */,
@@ -186,12 +186,12 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
-		64F84F3123C6D83F0036800F /* Swift */ = {
+		64F84F3123C6D83F0036800F /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				64FE17E023C727A800BE9E0B /* SwiftViewController.swift */,
+				64FE17E023C727A800BE9E0B /* UIKitViewController.swift */,
 			);
-			path = Swift;
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 		9C2E89ACB8B17577AFA60546 /* Pods */ = {
@@ -410,7 +410,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64FE17E123C727A800BE9E0B /* SwiftViewController.swift in Sources */,
+				64FE17E123C727A800BE9E0B /* UIKitViewController.swift in Sources */,
 				64F470FB23C41CDE0048F322 /* ViewController.swift in Sources */,
 				64F4712F23C48AA70048F322 /* StoryboardUIViewController.swift in Sources */,
 				64F4712A23C465EB0048F322 /* FeatureViewController.swift in Sources */,
