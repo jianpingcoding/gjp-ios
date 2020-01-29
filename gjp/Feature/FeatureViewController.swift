@@ -1,5 +1,5 @@
 //
-//  HomeTableTableViewController.swift
+//  FeatureViewController.swift
 //  gjp
 //
 //  Created by Jianping on 7/1/20.
@@ -8,16 +8,10 @@
 
 import UIKit
 
-class FeatureViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
-    //-------------------- Properties --------------------
-    
-    var features = [Feature]()
-    let featureNames = ["Table View"]
+class FeatureViewController: UIViewController {
+    private var features = [Feature]()
+    private let featureNames = ["Table View"]
     private var featureTableView: UITableView!
-    
-    
-    //-------------------- UIViewController class --------------------
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,33 +21,10 @@ class FeatureViewController: UIViewController, UITableViewDataSource, UITableVie
         initData()
     }
     
-    //-------------------- UITableViewDataSource protocol --------------------
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return features.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTableViewCell", for: indexPath as IndexPath)
-        cell.textLabel!.text = "\(features[indexPath.row].name)"
-        return cell
-    }
-
-
-    //-------------------- UITableViewDelegate protocol --------------------
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let UIKitVC = UIKitViewController()
-        self.navigationController?.pushViewController(UIKitVC, animated: true)
-//        self.present(swiftVC, animated: true, completion: nil)
-    }
-    
-    //-------------------- FeatureViewController class --------------------
-    
     // Add feature table view
     private func setupView() {
        let statusBarHeight: CGFloat = UIApplication.shared.statusBarFrame.size.height
-        let navigationBarHeight: CGFloat = self.navigationController?.navigationBar.frame.height ?? 0
+       let navigationBarHeight: CGFloat = self.navigationController?.navigationBar.frame.height ?? 0
        let displayWidth: CGFloat = self.view.frame.width
        let displayHeight: CGFloat = self.view.frame.height
 
@@ -77,5 +48,25 @@ class FeatureViewController: UIViewController, UITableViewDataSource, UITableVie
             }
             features.append(feature)
         }
+    }
+}
+
+extension FeatureViewController: UITableViewDataSource {
+   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+       return features.count
+   }
+   
+   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+       let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTableViewCell", for: indexPath as IndexPath)
+       cell.textLabel!.text = "\(features[indexPath.row].name)"
+       return cell
+   }
+}
+
+extension FeatureViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let uiKitVC = UIKitViewController()
+        self.navigationController?.pushViewController(uiKitVC, animated: true)
+    //        self.present(swiftVC, animated: true, completion: nil)
     }
 }
